@@ -2,14 +2,14 @@ class Soldado {
     private String nome;
     private int posicao;
     private String arma;
-    public static final int quantSoldado=0;
+    private static int quantSoldado=0;
 
 
     public Soldado(String nome){
         this.nome = nome;
         this.posicao= 0;
         this.arma= "punho";
-        this.quantSoldado+=1;
+        this.quantSoldado++;
     }
     
     public void movimentar(int distancia){
