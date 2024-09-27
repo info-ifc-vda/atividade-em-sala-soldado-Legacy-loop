@@ -13,12 +13,12 @@ class Soldado {
     }
     
     public void movimentar(int distancia){
-        setPosicao(distancia);
+        Mover(distancia);
         System.out.println("o soldado percorreu "+ distancia+" posicoes");
     }
 
     public void movimentar(){
-        setPosicao(10);
+        Mover(10);
         System.out.println("o soldado percorreu 10 posicoes");
     }
 
@@ -57,7 +57,7 @@ class Soldado {
         this.arma= arma;
     }
 
-    public void setPosicao(int distancia){
+    public void Mover(int distancia){
         this.posicao+= distancia; 
     }
 
